@@ -1,57 +1,93 @@
+[08:40] Maxim Brinster
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>TrapHouse24 - Ihr Growshop</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Verweis auf Ihr CSS-Stylesheet -->
+    <title>TrapHouse - Ihr Gartenbau Spezialist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d4edda; /* Hellgrüner Hintergrund */
+        }
+ 
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+ 
+        header .logo {
+            font-size: 24px;
+        }
+ 
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+ 
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+ 
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .slider {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+ 
+        .product-tile {
+            width: calc((100% / 6) - 10px); /* 6 Kacheln pro Zeile */
+            height: 100px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+ 
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>TrapHouse24</h1>
+        <div class="logo">TrapHouse</div>
         <nav>
             <ul>
                 <li><a href="#produkte">Produkte</a></li>
-                <li><a href="#ueber-uns">Über Uns</a></li>
+                <li><a href="#tipps">Tipps</a></li>
+                <li><a href="#ueber-uns">Über uns</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="produkte">
-        <h2>Unsere Produkte</h2>
-        <!-- Produkte Listen -->
-        <div class="produkt">
-            <h3>Produkt 1</h3>
-            <p>Beschreibung von Produkt 1</p>
-        </div>
-        <!-- Weitere Produkte hinzufügen -->
-    </section>
-
-    <section id="ueber-uns">
-        <h2>Über Uns</h2>
-        <p>
-            Informationen über Ihr Unternehmen.
-        </p>
-    </section>
-
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <form action="sendeKontakt.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="nachricht">Nachricht:</label>
-            <textarea id="nachricht" name="nachricht" required></textarea>
-
-            <button type="submit">Senden</button>
-        </form>
-    </section>
-
+ 
+    <div class="slider">
+        <!-- 18 Produktkacheln (6 pro Zeile, 3 Zeilen) -->
+        <!-- Beispielhafte Kacheln. Hier können Sie dynamischen Inhalt einfügen. -->
+        <div class="product-tile">Produkt 1</div>
+        <!-- Weitere Kacheln hier einfügen... -->
+    </div>
+ 
     <footer>
-        <p>© 2023 Ihr Growshop</p>
+        <p>© 2023 TrapHouse</p>
     </footer>
 </body>
 </html>
